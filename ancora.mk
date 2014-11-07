@@ -24,6 +24,10 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
+# Files needed for AOKP ancora
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/WallpaperCropper.apk:system/priv-app/WallpaperCropper.apk
+
 # Boot and charging images
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ARIESVE.rle:root/ARIESVE.rle \
@@ -158,9 +162,6 @@ PRODUCT_PACKAGES += \
 
 # qcmediaplayer
 PRODUCT_PACKAGES += qcmediaplayer
-
-# Torch
-PRODUCT_PACKAGES += Torch
 
 PRODUCT_PACKAGES += LiveWallpapersPicker
 

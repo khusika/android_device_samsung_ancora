@@ -35,7 +35,7 @@ debug.composition.type=dyn
 lpa.decode=false
 
 # Resampler quality
-af.resampler.quality=255
+af.resampler.quality=4
 
 # Disable gapless mode
 audio.gapless.playback.disable=true
@@ -66,3 +66,11 @@ ro.sys.fw.bg_apps_limit=16
 
 # Disable metadata mode
 debug.camcorder.disablemeta=1
+
+# Hardware info
+ro.device.chipset=Qualcomm Snapdragon MSM8255T
+ro.device.gpu=Qualcomm Adreno 205
+ro.device.front_cam=0.3 MegaPixel
+ro.device.rear_cam=5.0 MegaPixel
+ro.device.screen_res=480 x 800
+ro.device.developer=K_TECH
