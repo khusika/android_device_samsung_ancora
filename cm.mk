@@ -1,18 +1,18 @@
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+# Inherit device configuration for ancora
+$(call inherit-product, device/samsung/ancora/full_ancora.mk)
 
-# Inherit GSM common stuff.
+# Inherit AOKP common stuff.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/ancora/full_ancora.mk)
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # ancora overlay
 PRODUCT_PACKAGE_OVERLAYS += device/samsung/ancora/overlay
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_720.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480.zip:system/media/bootanimation.zip
 
 PRODUCT_RELEASE_NAME := ancora
 
@@ -23,4 +23,4 @@ PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-I8150
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=samsung/GT-I8150/GT-I8150:2.3.6/GINGERBREAD/XXLMD:user/release-keys PRIVATE_BUILD_DESC="GT-I8150-user 2.3.6 GINGERBREAD XXLMD release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=samsung/GT-I8150/GT-I8150:2.3.6/GINGERBREAD/XXLMJ:user/release-keys PRIVATE_BUILD_DESC="GT-I8150-user 2.3.6 GINGERBREAD XXLMJ release-keys"
