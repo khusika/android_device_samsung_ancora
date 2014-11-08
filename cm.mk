@@ -1,23 +1,23 @@
 # Inherit device configuration for ancora
 $(call inherit-product, device/samsung/ancora/full_ancora.mk)
 
-# Inherit AOKP common stuff.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+# Inherit AICP common stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # ancora overlay
 PRODUCT_PACKAGE_OVERLAYS += device/samsung/ancora/overlay
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_480.zip:system/media/bootanimation.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
 
 PRODUCT_RELEASE_NAME := ancora
 
 # Setup device configuration
-PRODUCT_NAME := aokp_ancora
+PRODUCT_NAME := aicp_ancora
 PRODUCT_DEVICE := ancora
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
