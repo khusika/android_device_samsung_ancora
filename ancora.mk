@@ -112,6 +112,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
     $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg
 
+
+# Torch for carbon
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/prebuilt/Torch.apk:system/app/Torch.apk
+
 PRODUCT_PACKAGES += \
     camera.msm7x30 \
     copybit.msm7x30 \
@@ -158,9 +163,6 @@ PRODUCT_PACKAGES += \
 
 # qcmediaplayer
 PRODUCT_PACKAGES += qcmediaplayer
-
-# Torch
-PRODUCT_PACKAGES += Torch
 
 PRODUCT_PACKAGES += LiveWallpapersPicker
 
